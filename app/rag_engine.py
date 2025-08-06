@@ -64,7 +64,7 @@ class DocumentProcessor:
 
     @staticmethod
     def smart_chunk_text(text: str, chunk_size: int = 1000, overlap: int = 200) -> List[str]:
-        """Smart text chunking with semantic awareness"""
+        """Smart text chunking with semantic   awareness"""
         # Split by paragraphs first
         paragraphs = text.split('\n\n')
         chunks = []
