@@ -63,7 +63,8 @@ app = FastAPI(
     title="High-Performance RAG System",
     description="Lightning-fast document Q&A with LlamaIndex and Gemini",
     version="2.0.0",
-    lifespan=lifespan
+    lifespan=lifespan,
+    root_path="/api/v1"
 )
 
 # Add CORS middleware
