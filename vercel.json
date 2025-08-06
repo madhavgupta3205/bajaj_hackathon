@@ -14,19 +14,5 @@
       "src": "/(.*)",
       "dest": "api/index.py"
     }
-  ],
-  "env": {
-    "GEMINI_API_KEY": "@gemini_api_key",
-    "HACKRX_BEARER_TOKEN": "@hackrx_bearer_token",
-    "CHROMA_DB_PATH": "/tmp/chroma_db",
-    "LLM_MODEL": "gemini-1.5-flash",
-    "EMBEDDING_MODEL": "sentence-transformers/all-mpnet-base-v2",
-    "CHUNK_SIZE": "1000",
-    "CHUNK_OVERLAP": "200",
-    "MAX_CHUNKS_PER_QUERY": "5",
-    "TEMPERATURE": "0.1",
-    "HOST": "0.0.0.0",
-    "PORT": "8000",
-    "LOG_LEVEL": "INFO"
-  }
+  ]
 }
