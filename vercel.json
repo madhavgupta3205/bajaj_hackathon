@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "api/index.py",
-      "use": "@vercel/python"
+  "functions": {
+    "api/index.py": {
+      "maxDuration": 60
     }
-  ],
+  },
   "routes": [
     {
       "src": "/api/v1/(.*)",
@@ -19,7 +18,7 @@
   "env": {
     "GEMINI_API_KEY": "@gemini_api_key",
     "HACKRX_BEARER_TOKEN": "@hackrx_bearer_token",
-    "CHROMA_DB_PATH": "./tmp/chroma_db",
+    "CHROMA_DB_PATH": "/tmp/chroma_db",
     "LLM_MODEL": "gemini-1.5-flash",
     "EMBEDDING_MODEL": "sentence-transformers/all-mpnet-base-v2",
     "CHUNK_SIZE": "1000",
@@ -29,10 +28,5 @@
     "HOST": "0.0.0.0",
     "PORT": "8000",
     "LOG_LEVEL": "INFO"
-  },
-  "functions": {
-    "api/index.py": {
-      "maxDuration": 60
-    }
   }
 }
