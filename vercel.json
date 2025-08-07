@@ -1,18 +1,20 @@
 {
   "version": 2,
   "functions": {
-    "api/index.py": {
-      "maxDuration": 60
+    "api/optimized.py": {
+      "maxDuration": 300,
+      "memory": 1024,
+      "runtime": "python3.9"
     }
   },
   "routes": [
     {
       "src": "/api/v1/(.*)",
-      "dest": "api/index.py"
+      "dest": "api/optimized.py"
     },
     {
       "src": "/(.*)",
-      "dest": "api/index.py"
+      "dest": "api/optimized.py"
     }
   ]
 }

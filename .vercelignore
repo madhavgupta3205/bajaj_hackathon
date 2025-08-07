@@ -1,0 +1,26 @@
+# Exclude heavy dependencies and files from Vercel deployment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+.env
+data/
+tests/
+.git/
+.vscode/
+.idea/
+*.log
+*.db
+*.sqlite3
+
+# Exclude original heavy RAG files
+app/rag_engine.py
+app/lightweight_rag.py
+
+# Keep only essential files
+!api/
+!vercel.json
+!requirements-vercel.txt
