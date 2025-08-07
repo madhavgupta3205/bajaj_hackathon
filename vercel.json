@@ -1,7 +1,7 @@
 {
   "version": 2,
   "functions": {
-    "api/optimized.py": {
+    "api/index.py": {
       "maxDuration": 300,
       "memory": 1024
     }
@@ -9,11 +9,11 @@
   "routes": [
     {
       "src": "/api/v1/(.*)",
-      "dest": "api/optimized.py"
+      "dest": "api/index.py"
     },
     {
       "src": "/(.*)",
-      "dest": "api/optimized.py"
+      "dest": "api/index.py"
     }
   ]
 }
