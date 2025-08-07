@@ -2,6 +2,7 @@
 Vercel deployment entry point for High-Performance RAG System
 """
 
+from app.main import app
 import sys
 import os
 
@@ -11,7 +12,6 @@ parent_dir = os.path.dirname(current_dir)
 sys.path.insert(0, parent_dir)
 
 # Import the FastAPI app
-from app.main import app
 
 # Export for Vercel
 # Vercel looks for 'app' or 'handler' in the entry file
