@@ -1,19 +1,15 @@
-# Lightweight requirements for Vercel deployment
+# Minimal requirements for Vercel deployment
 # Web Framework
 fastapi==0.115.6
+uvicorn[standard]==0.32.1
 pydantic==2.10.3
-pydantic-settings==2.7.0
 
 # Document Processing
 PyPDF2==3.0.1
-python-multipart==0.0.20
 
 # AI & ML - Only essential packages
 google-generativeai==0.8.3
-numpy==1.24.3
 
 # Utilities
 python-dotenv==1.0.1
 requests==2.32.3
-httpx==0.28.1
-tenacity==9.0.0
